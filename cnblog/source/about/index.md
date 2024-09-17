@@ -1,5 +1,6 @@
 ---
 title: about
+layout: about
 date: 2024-09-17 21:19:57
 ---
 
