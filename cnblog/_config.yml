@@ -3,13 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
+title: ChenXiaWen's Blog
+subtitle: "副标题"
+description: "站点说明"
 keywords:
 author: John Doe
-language: en
-timezone: ""
+language:
+  - zh-CN
+  - zh-tw
+  - en
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -97,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: fluid # 指定主题
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
