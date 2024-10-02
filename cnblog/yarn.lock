@@ -555,6 +555,14 @@
     "resolve" "^1.20.0"
     "tildify" "^2.0.0"
 
+"hexo-deployer-rsync@^3.0.0":
+  "integrity" "sha512-VdbKqrTpPpGLAAMqj2bwdL0wWm9xK+gfyNXcgEev1IQHJ2q4T+beMKNWJLv1hAiR3vKPHtnTf+AW7fwMeVHBow=="
+  "resolved" "https://registry.npmmirror.com/hexo-deployer-rsync/-/hexo-deployer-rsync-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "hexo-util" "^3.0.1"
+    "picocolors" "^1.0.0"
+
 "hexo-front-matter@^4.2.1":
   "integrity" "sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA=="
   "resolved" "https://registry.npmmirror.com/hexo-front-matter/-/hexo-front-matter-4.2.1.tgz"

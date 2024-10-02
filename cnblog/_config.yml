@@ -105,4 +105,11 @@ theme: fluid # 指定主题
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: rsync
+  host: 106.52.93.251
+  user: super999
+  root: /nginx_data/nginx/html/www/chenxiawen.cn/cnblog/
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
