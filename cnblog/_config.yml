@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ChenXiaWen's Blog
+title: 樱木小白's Blog
 subtitle: "副标题"
-description: "站点说明"
+description: "樱木小白的技术博客"
 keywords:
-author: John Doe
+author: Super999
 language:
   - zh-CN
   - zh-tw
@@ -50,7 +50,7 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ""
   wrap: true
   hljs: false
@@ -100,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid # 指定主题
+theme: butterfly # 指定主题
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
