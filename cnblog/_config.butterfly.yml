@@ -59,6 +59,7 @@ code_blocks:
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
+  # 是否顯示全屏顯示代碼塊按鈕
   fullpage: true
 
 # Social media links
@@ -99,7 +100,7 @@ tag_img: /cnblog/img/tag_img.jpg
 tag_per_img:
 
 # Note: category page, not categories page
-category_img:
+category_img: /cnblog/img/category_img.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -860,7 +861,7 @@ activate_power_mode:
 # canvas_ribbon
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   # The size of ribbon
   size: 150
   # The opacity of ribbon (0 ~ 1)
@@ -890,7 +891,7 @@ canvas_nest:
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999
   mobile: false
 
@@ -918,7 +919,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -926,7 +927,7 @@ lightbox:
 
 # Series
 series:
-  enable: false
+  enable: true
   # Order by title or date
   orderBy: 'title'
   # Sort of order. 1, asc for ascending; -1, desc for descending
