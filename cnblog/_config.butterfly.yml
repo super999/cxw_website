@@ -27,20 +27,19 @@ menu:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
     图库: /Gallery/ || fas fa-images
-    说说: /talking/ || fas fa-comment-dots
-    示例: /link/ || fas fa-thumbs-up
+    示例: https://butterfly.js.org/link/ || fas fa-thumbs-up
   文档||fas fa-book:
-    🚀 快速開始: /posts/21cfbf15/
-    📑 主題頁面: /posts/dc584b87/
-    🛠 主題配置: /posts/4aa8abbe/
-    ⚔️ 標簽外挂: /posts/ceeb73f/
-    ❓ 主題問答: /posts/98d20436/
-    ⚡️ 進階教程: /posts/4073eda/
-    ✨ 更新日誌: /posts/198a4240/
-  留言板: /messageboard/ || fas fa-comment-dots
+    🚀  快速開始: https://butterfly.js.org/posts/21cfbf15/
+    📑  主題頁面: https://butterfly.js.org/posts/dc584b87/
+    🛠  主題配置: https://butterfly.js.org/posts/4aa8abbe/
+    ⚔️ 標簽外挂: https://butterfly.js.org/posts/ceeb73f/
+    ❓  主題問答: https://butterfly.js.org/posts/98d20436/
+    ⚡️ 進階教程: https://butterfly.js.org/posts/4073eda/
+    ✨  更新日誌: https://butterfly.js.org/posts/198a4240/
+  墨缘录: /messageboard/ || fas fa-comment-dots
   关于: /about/ || fas fa-user
   语言||fas fa-language:
-    English: /en/ || fas fa-e
+#    English: /en/ || fas fa-e
     中文: / || fas fa-c
 
 # --------------------------------------
@@ -280,7 +279,7 @@ footer:
     enable: true
     since: 2015
   custom_text: '
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a><i class="iconfont icon-love"></i>
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span><i class="fa fa-heart"></i></a>
     <br>
     <a href="https://beian.miit.gov.cn/"  style="" target="_blank">备案号：闽ICP备13003266号-8</a>
   '
