@@ -14,6 +14,15 @@ hexo server
 
 git bash: hexo deploy
 
+## 发布
+```bash
+cd cnblog/
+
+hexo deploy --generate
+
+```
+
+
 ## 贡献
 
 如果你对我的博客有任何建议或想要贡献内容，请随时提出问题或提交拉取请求。
