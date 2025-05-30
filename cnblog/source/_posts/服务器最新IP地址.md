@@ -17,7 +17,7 @@ permalink: /posts/server-ip.html
 
 <script>
 // 【1】你的接口 URL，注意如果跨域需要服务器允许 CORS
-const API_URL = 'http://heijinga.com:5000/api/latest_ip';
+const API_URL = 'https://chenxiawen.cn/api/latest_ip';
 // 【2】将接口返回的 JSON 转为 HTML 表格
 function renderTable(data) {
   const now = Date.now();
