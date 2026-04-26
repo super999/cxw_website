@@ -3,7 +3,7 @@ title: DeepSeek V4 对话测试
 date: 2026-04-26
 categories:
   - 工具
-permalink: /deepseek-chat/
+permalink: /deepseek-chat-intro/
 ---
 
 # DeepSeek V4 对话测试
