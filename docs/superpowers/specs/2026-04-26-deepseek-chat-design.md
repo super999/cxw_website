@@ -10,6 +10,9 @@
 cnblog/source/deepseek-chat/
 ├── index.html      # 主页面
 └── api-key.js      # Base64 混淆的 API Key
+
+cnblog/source/_posts/
+└── deepseek-chat.md   # 博客文章，引导用户到对话页面
 ```
 
 ## 页面功能
@@ -21,6 +24,12 @@ cnblog/source/deepseek-chat/
 | 流式输出 | 打字机效果，实时显示响应 |
 | 对话历史 | localStorage 持久保存 |
 | 清空按钮 | 页面提供"清空历史"按钮 |
+
+## Hexo 博客文章
+
+创建一个 `deepseek-chat.md` 博客文章：
+- 标题：DeepSeek V4 对话测试
+- 内容：简要介绍页面功能，提供跳转链接到 `/cnblog/deepseek-chat/`
 
 ## API Key 安全方案
 
