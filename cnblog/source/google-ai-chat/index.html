@@ -505,11 +505,7 @@
             time.className = 'message-time';
             time.textContent = new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
 
-            if (role === 'user') {
-                div.innerHTML = formatContent(content);
-            } else {
-                div.innerHTML = formatContent(content);
-            }
+            div.innerHTML = formatContent(content);
 
             div.appendChild(time);
             chatContainer.appendChild(div);
@@ -548,12 +544,12 @@
 
             try {
                 let imageData = null;
+                const mimeType = selectedFile?.type || 'image/png';
                 if (selectedFile) {
                     imageData = await fileToBase64(selectedFile);
                     clearSelectedFile();
                 }
-
-                await callGeminiAPI(messageText, imageData, loadingDiv);
+                await callGeminiAPI(messageText, imageData, mimeType, loadingDiv);
             } catch (error) {
                 loadingDiv.remove();
                 renderMessage('assistant', '错误: ' + error.message, true);
@@ -563,7 +559,7 @@
             }
         }
 
-        async function callGeminiAPI(text, imageData, loadingDiv) {
+        async function callGeminiAPI(text, imageData, mimeType, loadingDiv) {
             const model = modelSelect.value;
             const apiKey = window.GOOGLE_AI_API_KEY;
 
@@ -579,7 +575,7 @@
                 contents.push({
                     parts: [
                         { text: text || '描述这张图片' },
-                        { inline_data: { mime_type: selectedFile?.type || 'image/png', data: imageData } }
+                        { inline_data: { mime_type: mimeType, data: imageData } }
                     ]
                 });
             } else {
