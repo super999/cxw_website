@@ -108,16 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ---
 
-### 2. 数据流向与更新链路
-
-```mermaid
-flowchart LR
-    A["车库路由器 (192.168.9.1)<br>iStoreOS-Cheku-DX"] -->|"每 60 秒 POST"| N["腾讯云 OpenResty<br>(chenxiawen.cn)"]
-    B["家里路由器 (cxwl999.eicp.net)<br>iStoreOS-Home-DX"] -->|"每 60 秒 POST"| N
-    N -->|"反向代理 5000 端口"| S["服务端容器 (ip-update-server)<br>写入 latest_ip.txt"]
-    U["用户浏览器 (博客页面)"] -->|"每 60 秒 GET latest_ip"| N
-    N --> S
-```
+### 2. 更新机制说明
 
 1. **客户端（各路由器）**：
    * 后台运行 Docker 容器 `ip-notifier-client`。
