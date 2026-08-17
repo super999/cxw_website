@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "启动 Hexo 服务器",
+      "cwd": "${workspaceFolder}/cnblog",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["hexo", "server"],
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Hexo is running at http://localhost:(\\d+)",
+        "uriFormat": "http://localhost:%s"
+      }
+    }
+  ]
+}
