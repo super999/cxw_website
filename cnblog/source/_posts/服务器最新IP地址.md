@@ -123,7 +123,7 @@ flowchart LR
    * 后台运行 Docker 容器 `ip-notifier-client`。
    * 每 60 秒向 `http://ip.3322.net` 查询当前宽带拨号的公网 IP。
    * 携带统一的 `X-API-Key` 密钥向服务端 `https://chenxiawen.cn/api/update_ip` 发送 POST 上报请求。
-2. **服务端（腾讯云 `106.52.93.251`）**：
+2. **服务端（腾讯云 `106.****.251`）**：
    * 运行 Nginx (OpenResty) 与 Docker 容器 `ip-update-server`（Flask 框架，监听 5000 端口）。
    * Nginx 配置 `/nginx_data/nginx/conf.d/chenxiawen.cn.conf` 中将 `/api/` 反向代理至本机 5000 端口（`http://172.21.0.1:5000`）。
    * 服务端校验 API Key 后更新内存并在当前目录的 `latest_ip.txt` 中持久化保存。
@@ -138,16 +138,16 @@ flowchart LR
 
 若页面 IP 停止更新或需要重启维护，可按以下命令快速定位：
 
-#### 检查/重启服务端 (腾讯云 `106.52.93.251`)
+#### 检查/重启服务端 (腾讯云 `106.****.251`)
 ```bash
 # 查看服务端实时接收日志
-ssh super999@106.52.93.251 "sudo docker logs -f ip-update-server"
+ssh super***@106.****.251 "sudo docker logs -f ip-update-server"
 
 # 重启服务端
-ssh super999@106.52.93.251 "sudo docker restart ip-update-server"
+ssh super***@106.****.251 "sudo docker restart ip-update-server"
 
 # 检查 Nginx 转发配置并重载
-ssh super999@106.52.93.251 "sudo docker exec openresty nginx -t && sudo docker exec openresty nginx -s reload"
+ssh super***@106.****.251 "sudo docker exec openresty nginx -t && sudo docker exec openresty nginx -s reload"
 ```
 
 #### 检查/重启车库路由器客户端 (`192.168.9.1`)
